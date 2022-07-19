@@ -30,7 +30,10 @@ function displayReversed(revMessage,message){
     
     let displayMessage = "";
 
-    if (revMessage.toLowerCase() == message.toLowerCase()) {
+    // .toLowerCase forces the function to read the characters in all lowercase. the if statement allows 
+    //you to compare the entered value to the reversed value. if they are equal, display something
+    //and if they aren't equal, display something else.
+    if (revMessage.toLowerCase() == message.toLowerCase()) { 
         //display "YEAH cool palindrome!"
         displayMessage = "YEAH! " + message + " is a cool palindrome!";
     } else {
